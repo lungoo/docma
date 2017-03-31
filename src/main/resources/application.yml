@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include: dev
+
+mybatis:
+    typeAliasesPackage: com.**.mapper
+    mapperLocations: classpath:com/**/mapper/*.xml
+
+logging:
+  file: ../log/springboot.log
