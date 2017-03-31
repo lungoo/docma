@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.andy.platform.doc.mapper.InterfaceInfoDOMapper">
+
+	<resultMap id="BaseResultMap" type="com.andy.platform.doc.dbvo.InterfaceInfoDO">
+		<id column="FUNC_NO" property="func_no" jdbcType="VARCHAR" />
+		<id column="FUNC_NAME" property="func_name" jdbcType="VARCHAR" />
+		<id column="FUNC_VERSION" property="func_version" jdbcType="VARCHAR" />
+		<id column="C_TYPE" property="c_type" jdbcType="VARCHAR" />
+		<id column="C_STATUS" property="c_status" jdbcType="VARCHAR" />
+		<id column="PACKAGE_PATH" property="package_path" jdbcType="VARCHAR" />
+		<id column="REQUEST_PATH" property="request_path" jdbcType="VARCHAR" />
+		<id column="LAST_DATE" property="last_date" jdbcType="VARCHAR" />
+		<id column="LAST_TIME" property="last_time" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="getCount" resultType="int">
+		<![CDATA[
+			SELECT count(1) FROM userinfo
+		]]>
+	</select>
+	<select id="queryByPK" resultMap="BaseResultMap">
+		  SELECT t.* FROM tinterface_info t where t.func_no = 'Q101'
+	</select>
+
+
+
+
+    <update id="update" >
+        <![CDATA[
+			update userinfo set id = 1
+		]]>
+    </update>
+</mapper>
