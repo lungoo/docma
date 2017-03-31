@@ -73,5 +73,5 @@
 		<module>docma-dal</module>
 		<module>docma-facade</module>
 		<module>docma-utils</module>
-    </modules>
+	</modules>
 </project>
