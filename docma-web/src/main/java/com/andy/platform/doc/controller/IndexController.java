@@ -39,4 +39,9 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/index2")
+    public String dt(){
+        return "index2";
+    }
+
 }
