@@ -48,7 +48,7 @@ body {
 
 .jumbotron {
   background-color: #e6522c;
-  background-image: url("/assets/jumbotron-background-cb04e0f2d6d.png");
+  background-image: url("/static/images/jumbotron-background.png");
   text-align: center;
   font-family: Lato, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;

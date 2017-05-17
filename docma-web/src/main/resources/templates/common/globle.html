@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prometheus - Monitoring system &amp; time series database</title>
+    <%
+    include("script.html"){}
+    %>
+</head>
+
+
+<body>
+
+<div class="navbar-jumbotron">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="/images/prometheus_logo_grey.svg" alt="Prometheus logo"> DOCMA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right main-nav">
+                    <li><a href="/docs/introduction/overview/">首 页</a></li>
+                    <li><a href="/download/">接口文档</a></li>
+                    <li><a href="/community/">命名规范</a></li>
+                    <li><a href="/blog/">待确认</a></li>
+                    <li><a href="https://github.com/prometheus"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/PrometheusIO"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 side-nav-col">
+            <ul class="nav navbar-nav side-nav">
+
+                <li class="active"><span class="nav-header"><i class="fa fa-hand-o-right"></i> <a href="#">Introduction</a></span><ul class="nav active"><li class="active"><a href="/docs/introduction/overview/">Overview</a></li><li><a href="/docs/introduction/install/">Installing</a></li><li><a href="/docs/introduction/getting_started/">Getting started</a></li><li><a href="/docs/introduction/comparison/">Comparison to alternatives</a></li><li><a href="/docs/introduction/faq/">FAQ</a></li><li><a href="/docs/introduction/roadmap/">Roadmap</a></li><li><a href="/docs/introduction/media/">Media</a></li><li><a href="/docs/introduction/glossary/">Glossary</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-flask"></i> <a href="#">Concepts</a></span><ul class="nav "><li><a href="/docs/concepts/data_model/">Data model</a></li><li><a href="/docs/concepts/metric_types/">Metric types</a></li><li><a href="/docs/concepts/jobs_instances/">Jobs and instances</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-search"></i> <a href="#">Querying</a></span><ul class="nav "><li><a href="/docs/querying/basics/">Basics</a></li><li><a href="/docs/querying/operators/">Operators</a></li><li><a href="/docs/querying/functions/">Functions</a></li><li><a href="/docs/querying/examples/">Examples</a></li><li><a href="/docs/querying/rules/">Recording rules</a></li><li><a href="/docs/querying/api/">HTTP API</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-line-chart"></i> <a href="#">Visualization</a></span><ul class="nav "><li><a href="/docs/visualization/browser/">Expression browser</a></li><li><a href="/docs/visualization/grafana/">Grafana</a></li><li><a href="/docs/visualization/consoles/">Console templates</a></li><li><a href="/docs/visualization/template_examples/">Template examples</a></li><li><a href="/docs/visualization/template_reference/">Template reference</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-code"></i> <a href="#">Instrumenting</a></span><ul class="nav "><li><a href="/docs/instrumenting/clientlibs/">Client libraries</a></li><li><a href="/docs/instrumenting/writing_clientlibs/">Writing client libraries</a></li><li><a href="/docs/instrumenting/pushing/">Pushing metrics</a></li><li><a href="/docs/instrumenting/exporters/">Exporters and integrations</a></li><li><a href="/docs/instrumenting/writing_exporters/">Writing exporters</a></li><li><a href="/docs/instrumenting/exposition_formats/">Exposition formats</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-cog"></i> <a href="#">Operating</a></span><ul class="nav "><li><a href="/docs/operating/configuration/">Configuration</a></li><li><a href="/docs/operating/storage/">Storage</a></li><li><a href="/docs/operating/federation/">Federation</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-bell-o"></i> <a href="#">Alerting</a></span><ul class="nav "><li><a href="/docs/alerting/overview/">Alerting overview</a></li><li><a href="/docs/alerting/alertmanager/">Alertmanager</a></li><li><a href="/docs/alerting/configuration/">Configuration</a></li><li><a href="/docs/alerting/rules/">Alerting rules</a></li><li><a href="/docs/alerting/clients/">Clients</a></li></ul></li>
+
+                <li><span class="nav-header"><i class="fa fa-thumbs-o-up"></i> <a href="#">Best practices</a></span><ul class="nav "><li><a href="/docs/practices/naming/">Metric and label naming</a></li><li><a href="/docs/practices/consoles/">Consoles and dashboards</a></li><li><a href="/docs/practices/instrumentation/">Instrumentation</a></li><li><a href="/docs/practices/histograms/">Histograms and summaries</a></li><li><a href="/docs/practices/alerting/">Alerting</a></li><li><a href="/docs/practices/rules/">Recording rules</a></li><li><a href="/docs/practices/pushing/">When to use the Pushgateway</a></li></ul></li>
+
+            </ul>
+        </div>
+
+        ${layoutContent}
+
+    </div>
+    <hr>
+
+    <footer>
+        <p class="pull-left">
+            © Prometheus Authors 2016
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
+

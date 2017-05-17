@@ -39,9 +39,27 @@ public class IndexController {
         return "index";
     }
 
-    @RequestMapping("/index2")
-    public String dt(){
-        return "index2";
+    @RequestMapping("/index1")
+    public String index1(){
+        return "index1";
+    }
+
+    /**
+     * 所有接口列表（包含公募和私募）
+     * @return
+     */
+    @RequestMapping("/interface/list")
+    public String interfaceTable(){
+        return "interface/list";
+    }
+
+    /**
+     * 接口详情
+     * @return
+     */
+    @RequestMapping("/interface/detail")
+    public String interfaceDetail(){
+        return "interface/detail";
     }
 
 }
